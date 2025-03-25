@@ -1,0 +1,212 @@
+import { StyleSheet } from "react-native";
+
+const styles = StyleSheet.create({
+  container: {
+    flexGrow: 1,
+    backgroundColor: "#fff",
+    paddingHorizontal: 20,
+    paddingBottom: 30,
+  },
+  header: {
+    alignItems: "center",
+    marginTop: 20,
+    marginBottom: 25,
+  },
+  headerTitle: {
+    fontSize: 26,
+    fontWeight: "700",
+    color: "#333",
+  },
+  headerSubtitle: {
+    fontSize: 14,
+    color: "#666",
+    marginTop: 5,
+  },
+  photoSection: {
+    alignItems: "center",
+    marginBottom: 25,
+  },
+  profilePhotoContainer: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    position: "relative",
+    marginBottom: 8,
+  },
+  profilePhoto: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    borderWidth: 2,
+    borderColor: "#ddd",
+  },
+  photoPlaceholder: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    backgroundColor: "#f2f2f2",
+    justifyContent: "center",
+    alignItems: "center",
+    borderWidth: 2,
+    borderColor: "#ddd",
+    borderStyle: "dashed",
+  },
+  photoEditButton: {
+    position: "absolute",
+    bottom: 0,
+    right: 0,
+    backgroundColor: "#007bff",
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    justifyContent: "center",
+    alignItems: "center",
+    borderWidth: 2,
+    borderColor: "#fff",
+  },
+  photoLabel: {
+    fontSize: 14,
+    color: "#666",
+  },
+  section: {
+    marginBottom: 25,
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    padding: 15,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.05,
+    shadowRadius: 3.84,
+    elevation: 2,
+  },
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: "600",
+    color: "#333",
+    marginBottom: 15,
+    borderBottomWidth: 1,
+    borderBottomColor: "#f0f0f0",
+    paddingBottom: 8,
+  },
+  formGroup: {
+    marginBottom: 15,
+  },
+  formRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  label: {
+    fontSize: 14,
+    fontWeight: "500",
+    marginBottom: 6,
+    color: "#444",
+  },
+  inputContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#f9f9f9",
+    borderWidth: 1,
+    borderColor: "#ddd",
+    borderRadius: 8,
+    height: 48,
+  },
+  inputIcon: {
+    marginHorizontal: 10,
+  },
+  input: {
+    flex: 1,
+    height: 46,
+    fontSize: 15,
+    color: "#333",
+    paddingRight: 10,
+  },
+  textAreaContainer: {
+    height: 100,
+    alignItems: "flex-start",
+  },
+  textArea: {
+    height: 98,
+    textAlignVertical: "top",
+    paddingTop: 10,
+  },
+  inputError: {
+    borderColor: "#ff6b6b",
+    borderWidth: 1,
+  },
+  errorText: {
+    color: "#ff6b6b",
+    fontSize: 12,
+    marginTop: 3,
+    marginLeft: 2,
+  },
+  pickerContainer: {
+    backgroundColor: "#f9f9f9",
+    borderWidth: 1,
+    borderColor: "#ddd",
+    borderRadius: 8,
+    height: 48,
+    justifyContent: "center",
+  },
+  picker: {
+    height: 48,
+  },
+  dateText: {
+    fontSize: 15,
+    color: "#333",
+    paddingVertical: 12,
+    flex: 1,
+  },
+  documentUpload: {
+    borderWidth: 1,
+    borderColor: "#ddd",
+    borderStyle: "dashed",
+    borderRadius: 8,
+    padding: 20,
+    backgroundColor: "#f9f9f9",
+    alignItems: "center",
+    justifyContent: "center",
+    height: 150,
+  },
+  documentPreview: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 6,
+  },
+  uploadText: {
+    marginTop: 10,
+    color: "#666",
+  },
+  registerButton: {
+    backgroundColor: "#007bff",
+    paddingVertical: 14,
+    borderRadius: 8,
+    alignItems: "center",
+    marginTop: 10,
+    marginBottom: 15,
+  },
+  registerButtonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "600",
+  },
+  loginLink: {
+    alignItems: "center",
+    marginBottom: 10,
+  },
+  loginText: {
+    fontSize: 14,
+    color: "#666",
+  },
+  loginTextBold: {
+    fontWeight: "600",
+    color: "#007bff",
+  },
+  spacer: {
+    height: 20,
+  },
+});
+
+export default styles;

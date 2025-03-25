@@ -1,0 +1,161 @@
+// flow work of our aapp
+
+
+####################################### for main screen initialy ##########################
+
+
+---------------------------------------for admin------------------------------------------ 
+# default passoword and user name for admin is admin and admin123
+
+user ID ----> # N 0 A # D 0 F # L
+
+
+
+
+
+------------------------****--------------for driver--------------------------------------------
+# default passoword and user name for driver is admin and driver123
+
+
+..................................... formate of user id .............................
+user ID ----> # N 2 A # D 2 F # L
+
+......................................log In .............................
+#log in  with this id and passowrd which is send throug mobile no
+
+
+                                  Registraion Phase
+..............................................................................................
+#register with ther information , after registarion  we sent a sms to driver that your details is submited successfully 
+# if driver is approved by admin 
+	then we again sent a sms to the drive with there user id  and password 
+#else we send a sms to the user to  contect with  us as soon as you possible regarding you application 
+.............................................................................................
+
+                                   drive dashboard
+...................................................................................
+1. Home Screen / Dashboard
+
+    daily earnings, 
+    completed trips,
+     and pending requests.
+    A "Go Online / Offline"
+    Live status 
+2. Ride Requests & History
+
+    Incoming Ride Requests (Accept/Reject ).
+    Ongoing Ride (Pickup & Drop Location, Navigation, Ride Fare, Customer Details).
+    Ride History 
+
+3. Earnings & Payments
+
+    Daily/Weekly Earnings Summary.
+    Each Trip Earnings.
+    Wallet Balance & Payout Requests.
+    Cash & Online Payments Tracking.
+
+4. Navigation & Map Integration
+
+    map with driver location.
+    Google Maps for navigation.
+ 
+
+5. Profile & Vehicle Details
+
+    Driver Profile Information (Name, Photo, Ratings, License, etc.).
+    Vehicle Details (Car Model, Number Plate, Insurance, etc.).
+    Documents Upload & Verification (RC, Insurance, License).
+
+6. Ratings & Reviews
+
+    Customer Ratings & Feedback.
+    Performance Metrics (Acceptance Rate, Cancellation Rate).
+    Improvement Suggestions.
+
+7. Notifications & Alerts
+
+    Ride Alerts & System Updates.
+    Earnings and Payout Notifications.
+    Promotions & Incentives Information.
+
+8. Support & Help Center
+
+    Live Chat or Call Support.
+    FAQs & Troubleshooting Guides.
+    Report Issues (Ride, Payment, Customer-related).
+
+9. Settings & Preferences
+
+    Language & Notification Settings.
+    Privacy & Security Settings.
+    Availability Schedule.
+
+
+
+ 
+
+-----------------------****---------------for user-----------------------------------------------
+# default passoword and user name for user is admin and user123
+
+user ID ----> # N 1 A # D 1 F # L
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------
+#in Index.js we have to create only navigation  structure for main screen 
+#all the componaant of the app is writen in the screen folder for  each type of accersor  
+
+
+
+
+######################### Genration of userId for each type of user #####################
+user id contain 10 digit includin alphabate and number 
+
+N--Mobile Number First digit
+A--Adhar card First digit
+D--Drivery licence first digit
+F--First name
+L--Last Name
+#--random Number
+*--admin --> 0
+*--user --> 1
+*--Driver --> 2
+
+
+user ID ----> # N * A # D * F # L
+
+
+function generateUserID(mobile, aadhaar, license, firstName, lastName, role) {
+    // Extract required values
+    let N = mobile.toString()[0];  
+    let A = aadhaar.toString()[0]; 
+    let D = license.toString()[0]; 
+    let F = firstName.charAt(0).toUpperCase(); 
+    let L = lastName.charAt(0).toUpperCase(); 
+
+ 
+    let random1 = Math.floor(Math.random() * 10);
+    let random2 = Math.floor(Math.random() * 10);
+    let random3 = Math.floor(Math.random() * 10);
+
+
+    let userID = `${random1}${N}${role}${A}${random2}${D}${role}${F}${random3}${L}`;
+
+    return userID;
+}
+
+
+
+
+http://192.168.151.154:5000
+
+
+
+
+
+
+

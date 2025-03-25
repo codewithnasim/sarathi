@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Metro Bundler
+.expo/
+.expo-shared/
+metro-cache/
+
+# Logs
+*.log
+*.log.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Android
+android/.gradle
+android/app/build/
+android/build/
+android/.idea
+android/local.properties
+android/.cxx
+
+# iOS
+ios/Pods/
+ios/build/
+ios/.DS_Store
+
+# Babel
+babel.config.js
+
+# IDE settings
+.vscode/
+.idea/
+
+# Temporary files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
