@@ -1,0 +1,34 @@
+user id contain 10 digit includin alphabate and number 
+
+N--Mobile Number First digit
+A--Adhar card First digit
+D--Drivery licence first digit
+F--First name
+L--Last Name
+#--random Number
+*--admin --> 0
+*--user --> 1
+*--Driver --> 2
+
+
+user ID ----> # N * A # D * F # L
+
+
+function generateUserID(mobile, aadhaar, license, firstName, lastName, role) {
+    // Extract required values
+    let N = mobile.toString()[0];  
+    let A = aadhaar.toString()[0]; 
+    let D = license.toString()[0]; 
+    let F = firstName.charAt(0).toUpperCase(); 
+    let L = lastName.charAt(0).toUpperCase(); 
+
+ 
+    let random1 = Math.floor(Math.random() * 10);
+    let random2 = Math.floor(Math.random() * 10);
+    let random3 = Math.floor(Math.random() * 10);
+
+
+    let userID = `${random1}${N}${role}${A}${random2}${D}${role}${F}${random3}${L}`;
+
+    return userID;
+}
